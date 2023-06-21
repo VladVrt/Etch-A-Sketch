@@ -4,26 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
     <title>Etch-A-Sketch</title>
   </head>
   <body>
-    <header><h1>ETCH A SKETCH</h1></header>
+    <header><h1>etch a sketch</h1><img id="pen" src="./pen.png" alt="penWithALine"></header>
     <div class="grid"></div>
-    <div class="btns">
-        <button id="reset">Reset</button>
-        <button id="gridScale">Grid Scale</button>
-    </div>
     <div class="slider">
       <input type="range" min="2" max="100" value="16" id="slider">
+  </div>
+    <div class="btns">
+      <button id="gridScale">Scale: <p class="value">16</p></button>
+      <button id="reset">Reset</button>
+      <div id="credits"><a href=https://github.com/VladVrt> <img id="ghLogo" src="githublogo.png" alt="github logo"/>VladVrt</a></div>
     </div>
-    <footer>Made by: <a href="https://github.com/VladVrt"> <img id="gh-logo" src="githublogo.png" alt="github logo">Vlad Vrt</a></footer>
     <script src="./script.js"></script>
   </body>
 </html>

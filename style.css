@@ -1,12 +1,121 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 10px;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+header {
+  display: flex;
+}
+
+h1 {
+  font-size: 50px;
+  color: black;
+}
+
+#pen {
+  height: 90px;
+  position: relative;
+  left:-15px;
+  top:-6px
+}
+
+.grid {
+  display: inline-grid;
+  grid-template-columns: repeat(16, 2fr);
+  grid-template-rows: repeat(16, 2fr);
+  height: 600px;
+  width: 600px;
+}
+
+#gridScale {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cell {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.171);
+}
+
+#slider {
+  -webkit-appearance: none;
+  width: 600px;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #1e1f1e;
+  cursor: pointer;
+}
+
+#slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #1e1f1e;
+  cursor: pointer;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 600px;
+  gap: 20px;
+}
+.btns button {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #d3d3d3;
+  font-size: 20px;
+}
+
+#credits{
+  margin-left: auto;
+}
+
+#ghLogo {
+  width: 30px;
+}
+
+#credits a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#reset:hover{
+  transform: scale(1.1);
+}
+
+#reset:active{
+  transform: scale(1.2);
 }
